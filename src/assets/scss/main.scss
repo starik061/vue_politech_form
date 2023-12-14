@@ -1,0 +1,32 @@
+body {
+  background: #fff;
+  font-family: 'Cera PRO Regular', Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro Medium';
+  src:
+    local('Cera Pro Medium'),
+    local('Cera-Pro-Medium'),
+    url('@/assets/fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/CeraPro-Medium.woff') format('woff'),
+    url('@/assets/fonts/CeraPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src:
+    local('Cera Pro Regular'),
+    local('Cera-Pro-Regular'),
+    url('@/assets/fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/CeraPro-Regular.woff') format('woff'),
+    url('@/assets/fonts/CeraPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
