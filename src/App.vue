@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <RouterView />
   </div>
 </template>
@@ -8,4 +8,10 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: greenyellow;
+}
+</style>

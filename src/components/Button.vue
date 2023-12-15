@@ -41,11 +41,11 @@ const getClassObject = () => {
 
 button {
     min-width: 160px;
-    min-height: 50px;
+    min-height: 40px;
     border: 1px solid $primary-color;
     font-family: 'Cera Pro Medium', Arial, sans-serif;
     font-size: 16px;
-    line-height: normal;
+    line-height: 1;
     color: #fff;
     border-radius: 10px;
 

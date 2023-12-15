@@ -1,3 +1,6 @@
+@import 'node_modules/normalize-scss/sass/normalize';
+@include normalize();
+
 body {
   background: #fff;
   font-family: 'Cera PRO Regular', Arial, sans-serif;

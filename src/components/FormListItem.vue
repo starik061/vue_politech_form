@@ -6,8 +6,8 @@
             <p>Дата создания: 01.01.2023</p>
         </div>
         <div>
-            <Button buttonType="secondary" text="Редактировать" padding="16px 32px" />
-            <Button buttonType="secondary" text="Удалить" padding="16px 32px" noBorder />
+            <Button buttonType="secondary" text="Редактировать" padding="12px 32px" />
+            <Button buttonType="secondary" text="Удалить" padding="12px 32px" noBorder />
         </div>
     </section>
 </template>
