@@ -9,7 +9,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'forms',
+      name: 'formsDefault',
       component: Forms,
       children: [
         {
