@@ -10,8 +10,11 @@
 
 <style lang="scss" scoped>
 .container {
+  min-width: 700px;
   max-width: 1440px;
-  margin: 0 auto;
   background-color: greenyellow;
+  overflow: hidden;
+  margin: 0 auto;
+
 }
 </style>

@@ -48,8 +48,12 @@ button {
     line-height: 1;
     color: #fff;
     border-radius: 10px;
-
     cursor: pointer;
+
+    &:hover,
+    &:active {
+        opacity: 0.75;
+    }
 }
 
 .primary {
@@ -57,7 +61,7 @@ button {
 }
 
 .secondary {
-    background-color: #fff;
+    background-color: transparent;
     color: $primary-color;
 }
 
