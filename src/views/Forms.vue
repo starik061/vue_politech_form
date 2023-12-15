@@ -2,7 +2,7 @@
     <section class="main-section">
         <div class="side-nav-wrapper">
             <aside class="side-nav">
-                <a class="logo" href="https://tpu.ru/">
+                <a class="logo" href="https://tpu.ru/" target="_blank" rel="noopener noreferrer">
                     <img src="@/assets/images/logo.png" alt="Politech logo">
                 </a>
                 <ul class="side-nav__list">
