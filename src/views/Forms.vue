@@ -7,7 +7,7 @@
                 </a>
                 <ul class="side-nav__list">
                     <li class="side-nav__list-item">
-                        <RouterLink class="side-nav__item" to="forms" active-class="active" ref="formsLink">Формы
+                        <RouterLink class="side-nav__item" to="forms" active-class="active">Формы
                         </RouterLink>
                     </li>
                     <li class="side-nav__list-item">
@@ -23,18 +23,11 @@
 
 <script setup>
 import Button from "@/components/Button.vue"
-import { RouterLink, useRoute } from 'vue-router'
-import { ref, onMounted } from 'vue'
+import { RouterLink } from 'vue-router'
 
-const route = useRoute()
-const formsLink = ref(null);
 
-onMounted(() => {
-    if (route.path === '/') {
-        // formsLink.value.classList.add('active');
-        console.log(formsLink)
-    }
-});
+
+
 </script>
 
 <style lang="scss" scoped>
