@@ -14,6 +14,11 @@ const router = createRouter({
       path: '/authentication',
       name: 'auth',
       component: Auth
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: Auth
     }
   ]
 })
