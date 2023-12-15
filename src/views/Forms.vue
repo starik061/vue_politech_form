@@ -23,10 +23,18 @@
 
 <script setup>
 import Button from "@/components/Button.vue"
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
+import { onMounted } from 'vue'
 
+const route = useRoute()
+const router = useRouter()
 
-
+onMounted(() => {
+    if (route.path === '/') {
+        console.log("route")
+        router.push({ path: '/forms' });
+    }
+});
 
 </script>
 
