@@ -1,35 +1,12 @@
-# vue-politech-form
+<div style="margin-top:0; padding-top:0" align="center">
+<h1 style="margin-top:0">Politech forms</h1>
+<p>A simple demonstration app created with Vue 3 (Composition API) in Vite and Firebase - with registration,
+log in, log out, adding, removing and updating of forms.</p>
+  
+[Figma template](<https://www.figma.com/file/6N6ufjxhn6W3hSlcVsH9uD/Тестовое-(Copy)?node-id=0%3A1&mode=dev>)
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+<p>Used technology stack: <b>Vue 3 (Composition API), Vue Router, Pinia, Firebase, SCSS.</b></p>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
