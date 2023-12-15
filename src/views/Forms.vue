@@ -6,30 +6,40 @@
                     <img src="@/assets/images/logo.png" alt="Politech logo">
                 </a>
                 <ul class="side-nav__list">
-                    <li class="side-nav__list-item">Формы</li>
-                    <li class="side-nav__list-item">Пользователи</li>
+                    <li class="side-nav__list-item">
+                        <RouterLink class="side-nav__item" to="forms" active-class="active" ref="formsLink">Формы
+                        </RouterLink>
+                    </li>
+                    <li class="side-nav__list-item">
+                        <RouterLink class="side-nav__item" to="users" active-class="active">Пользователи</RouterLink>
+                    </li>
                 </ul>
                 <Button class="exit-btn" buttonType="secondary" text="Выход" padding="16px 56px" />
             </aside>
         </div>
-        <main class="main-content">
-            <div class="form-header">
-                <h1 class="main-head">Формы</h1>
-                <Button buttonType="primary" text="Создать форму" padding="16px 21px" />
-            </div>
-            <ul class="form-list">
-                <FormListItem v-for="(formListItem, formListItemIndex) in 5" :key="formListItem + formListItemIndex" />
-            </ul>
-        </main>
+        <RouterView></RouterView>
     </section>
 </template>
 
 <script setup>
 import Button from "@/components/Button.vue"
-import FormListItem from "@/components/FormListItem.vue"
+import { RouterLink, useRoute } from 'vue-router'
+import { ref, onMounted } from 'vue'
+
+const route = useRoute()
+const formsLink = ref(null);
+
+onMounted(() => {
+    if (route.path === '/') {
+        // formsLink.value.classList.add('active');
+        console.log(formsLink)
+    }
+});
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/scss/variables.scss";
+
 .main-section {
     display: flex;
     background-color: #F6F6F6;
@@ -58,33 +68,17 @@ import FormListItem from "@/components/FormListItem.vue"
     padding-bottom: 16px;
 }
 
+.side-nav__item {
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
 .exit-btn {
     margin-top: auto;
 }
 
-.main-content {
-    width: 1004px;
-    padding: 80px 165px 90px 30px;
-}
-
-.form-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.main-head {
-    margin: 0;
-    font-size: 40px;
-}
-
-.form-list {
-    width: 100%;
-    max-height: calc(100vh - 270px);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    overflow-y: scroll;
+.active {
+    color: $primary-color;
 }
 </style>
